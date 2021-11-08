@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:focus{outline: none;}
+html {
+    color: #555;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+.header {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(recourses/hero.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    text-transform: uppercase;
+}
+.row {
+    width: 1140;
+    margin: 0 auto;
+    display: flex;
+}
+.hero-text-box {
+    width: 1140;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h1 {
+    font-size: 240%;
+    font-weight: 300;
+    color: white;
+    word-spacing: 4;
+}
+.logo {
+    height: 100px;
+    width: auto;
+    margin-top: 20px;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 30%;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 5%;
+    min-width: 80px;
+    flex: 1;
+}
+.nav-item {
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    margin: 0 10px 0 10px;
+    color: white;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+}
+.btn:hover , .btn:active, .btn-pay:active, .btn-pay:hover {
+    background-color: #cf6d17;
+}
+.btn-full{
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+}
+.btn-ghost {
+    border: 1px solid;
+    color: #e67e22;
+    transition: color 0.2s;
+}
+#nav {
+    text-decoration: none;
+    word-spacing: 4;
+}
+#nav:hover {
+    text-decoration: underline;
+    color: #e67e22;
+    margin-top: 3px;
+}
+.font {
+    font-family: 'Noto Sans Display', sans-serif;
+}
+h2:after {
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: #e67e22;
+    content: " ";
+    margin: auto;
+    margin-top: 30px;
+}
+.section {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.sectionBox {
+    display: flex;
+    justify-content: center;
+}
+.underHead {
+    text-align: center;
+    margin: 5% 20% 5% 20%;
+}
+.textBoxes {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.textBox {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+}
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+    --ionicon-stroke-width: 20px; 
+}
+.bmargin {
+    margin-bottom: 10px;
+}
+.food {
+    overflow: hidden;
+    width: 25%;
+    height: auto;
+    float: left;
+}
+.favFoods {
+    width: 100%;
+    margin: 0;
+    background-color: #000;
+    height: 82vh;
+}
+.favFoods img {
+    opacity: 0.8;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+.favFoods img:hover {
+    opacity: 1;
+    transform: scale(1);
+}
+.picContainer {
+    width: 100%;
+    display: flex;
+}
+.howItWorks {
+    background-color: lightgray;
+}
+.center {
+    text-align: center;
+}
+.topMar {
+    padding-top: 30px;
+}
+.firstBox {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    width: 1140px;
+    margin-top: 6%;
+    padding-bottom: 5%;
+}
+.secondBox {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 130px;
+    margin-left: 5%;
+}
+.phone {
+    width: 20%;
+    height: auto;
+    margin-left: 36%;
+}
+.btn-app:link, .btn-app:visited {
+    border: 0;
+}
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+.subBox {
+    margin: 20px;
+    display: flex;
+}
+.bullets {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+    width: 20%;
+    height: 60%;
+    margin-right: 25px;
+}
+.cityBox {
+    width: 1140px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin: 5% 0 0 6%;
+}
+.city {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: auto;
+}
+.city img {
+    width: 90%;
+    height: auto;
+}
+.icon-small {
+    font-size: 100%;
+    color: #e67e22;
+    --ionicon-stroke-width: 20px;
+    margin-right: 5px ;
+}
+.cityLink {
+    color: #e67e22;
+}
+.city p {
+    margin-top: 4px;
+}
+.city h3 {
+    margin-bottom: 10px;
+}
+.cities {
+    height: 100vh;
+}
+.quoteSection {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(recourses/back-customers.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.quotes {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.quote {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    min-height: 300px;
+    width: 300px;
+}
+blockquote {
+    font-style: italic;
+    padding: 2%;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+    font-size: smaller;
+}
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+.cite {
+    margin-top: 20px;
+    font-size: smaller;
+    font-style: italic;
+}
+.cite img {
+    border-radius: 50px;
+    border: 1px hidden;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.paymentSection {
+    height: 100vh;
+    background-color: #F4F4F4;
+}
+.payments {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.payOption {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    background-color: #FcFcFc;
+    min-height: 400px;
+    width: 300px;
+    box-shadow: 0 2px 2px #cac5c5;
+}
+h4 {
+    margin: 10px 0 0 10px;
+    word-spacing: 4;
+    font-weight: lighter;
+}
+.bigNum {
+    font-size: 300%;
+    font-weight: 100;
+}
+.small {
+    font-size: small;
+    margin: 5px 0 0 10px;
+}
+.month {
+    display: flex;
+    margin: 10px 0 0 10px;
+}
+.payColor {
+    color: #e67e22;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.pros {
+    margin-top: 10px;
+    border: 1px solid #e8e8e8;
+    height: 200px;
+}
+.pros p {
+    margin: 20px 15px 15px 15px;
+}
+.btn-pay {
+    margin-top: 10px;
+    margin-left: 20%;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 10px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    height: 40px;
+    width: 150px;
+}
+.btn-pay-ghost{
+    color: #e67e22;
+    border: 1px solid #e67e22;
+}
+.hidden {
+    visibility: hidden;
+}
+.contact {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 40%;
+}
+input[type=email],input[type=text],select,textarea {
+    width: 40%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin: 10px 0 10px 20px;
+    justify-self: flex-end;
+}
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+.contact {
+    display: flex;
+}
+label {
+    margin: 10px 0 15px 60%;
+}
+.check {
+    display: flex;
+    margin-left: 5%;
+}
+.check p {
+    font-size: small;
+    margin-top: 10px;
+}
+.smaller {
+    width: 150px;
+    height: auto;
+    margin-left: 15px;
+}
+.another-one {
+    margin-bottom: 40px;
+}
+.footer {
+    width: 100%;
+    height: 20vh;
+    background-color: #555;
+    border: 1px hidden;
+    padding-top: 15px;
+}
+.set-one {
+    display: flex;
+    margin-left: 20px;
+    width: 40%;
+}
+.set-one a {
+    color: gray;
+    text-decoration: none;
+    margin-left: 2.2%;
+}
+.set-one a:hover {
+    color: white;
+}
+.both-sets {
+    display: flex;
+}
+.set-two {
+    margin-left: 35%;
+    width: 25%;
+}
+.icon {
+    font-size: 130%;
+    color: grey;
+    --ionicon-stroke-width: 20px;
+    margin-right: 5px ;
+}
+.set-two a {
+    color: gray;
+    text-decoration: none;
+    margin-left: 2.2%;
+}
+.facebook:hover {
+    color: rgb(0, 183, 255);
+}
+.twitter:hover {
+    color: rgb(0, 255, 255);
+}
+.google:hover {
+    color: rgba(255, 166, 0, 0.836);
+}
+.insta:hover {
+    color: rgb(196, 20, 196);
+}
+.footer-color {
+    color: grey;
+}
